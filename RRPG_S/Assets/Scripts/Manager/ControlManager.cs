@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+#if !UNITY_EDITOR  || !UNITY_STANDALONE
+#error This game only supports PC version.
+#endif
 // 조작 키 설정 클레스
 public class ControlManager : MonoBehaviour
 {
