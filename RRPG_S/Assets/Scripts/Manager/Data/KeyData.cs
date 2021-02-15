@@ -7,6 +7,7 @@ public struct PlayerKeyData
     public KeyCode backward;
     public KeyCode left;
     public KeyCode right;
+    public KeyCode dash;
 }
 
 [System.Serializable]

@@ -19,6 +19,7 @@ public class ControlManager : MonoBehaviour
         pConSet.backward = pConData.backward;
         pConSet.left     = pConData.left;
         pConSet.right    = pConData.right;
+        pConSet.dash     = pConData.dash;
     }
 
 
