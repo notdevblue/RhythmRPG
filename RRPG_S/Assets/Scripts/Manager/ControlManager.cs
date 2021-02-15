@@ -7,17 +7,18 @@ public class ControlManager : MonoBehaviour
 {
     [SerializeField] private PlayerKeyData pConData;
     [SerializeField] private CameraKeyData camConData;
-
-    private MovePlayer pConSet = null;
+                     private MovePlayer    pConSet = null;
 
 
 
     private void Awake()
     {
-        pConSet.foward = pConData.forward;
+        pConSet = FindObjectOfType<MovePlayer>();
+
+        pConSet.foward   = pConData.forward;
         pConSet.backward = pConData.backward;
-        pConSet.left = pConData.left;
-        pConSet.right = pConData.right;
+        pConSet.left     = pConData.left;
+        pConSet.right    = pConData.right;
     }
 
 
