@@ -17,7 +17,7 @@ public class MovePlayer : MonoBehaviour
 
 
 
-    void Start()
+    private void Start()
     {
         #region 유니티 디버그 용
         #if UNITY_EDITOR
@@ -31,7 +31,7 @@ public class MovePlayer : MonoBehaviour
         #endregion
     }
 
-
+    
 
 
 }
